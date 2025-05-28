@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* 導入文字字型來源(google font) */
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin:24px 0px;
+    a {color:black;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.blog-new{
+    display: flex;
+    border-bottom: 1px solid #6C757D;
+    border-top: 1px solid #6C757D;
+    margin-bottom: 80px;
+    img{
+        display: block;
+        max-width: 50%;
+    }
+}
+.content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+.text-content{
+    time{
+        display: block;
+        padding-bottom: 4px;
+    }
+    .tags{
+        display: flex;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+    .hashtag{
+        font-size: 24px;
+        color: #0027D5;
+    }
+    .primary-rounded{
+        color: #FFFFFF;
+        font-weight: 700;
+        background: #0027D5;
+        border-radius: 25px;
+        padding: 6px 12px;
+        margin-left: 8px;
+    }
+    h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+.blog-detail{
+    max-width: 636px;
+    margin: 0 auto;
+   .content-part{
+       padding-bottom: 48px; }
+       
+    img{
+        padding-bottom: 24px;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 700;
+        color: #0027D5;
+        padding-bottom: 24px;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 12px;
+    }
+    .p-main{
+        padding-bottom: 8px;
+    }
+    ol{
+        display: inline-block;
+        list-style-type: decimal;
+        padding-left: 1em;
+    }
+}
