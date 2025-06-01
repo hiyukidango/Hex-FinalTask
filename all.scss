@@ -67,10 +67,22 @@ a:hover{
     background: #EDEDED;
     border-radius: 10px;
 }
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle
+}
 
 .wrap{
     max-width: 1296px;
     margin: 0 auto;
+}
+@media (max-width: 992px) {
+    .wrap{
+        padding: 0 12px;
+    }
+    
+    
 }
 .header{
     display: flex;
@@ -96,8 +108,9 @@ a:hover{
         max-width: 50%;
     }
 }
+
 .content{
-    width: 50%;
+    max-width: 50%;
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -108,6 +121,7 @@ a:hover{
         border-radius: 25px;
     }
 }
+
 .text-content{
     time{
         display: block;
@@ -135,6 +149,23 @@ a:hover{
         font-weight: 700;
     }
 }
+// 最新文章-手機版排版設計
+@media (max-width: 767px) {
+    .blog-new{
+        display: block;
+        img{
+            max-width: 100%;
+            padding-bottom: 48px;
+        }
+        }
+    .content{
+        max-width: 100%;
+        }
+    }
+    .text-content{
+        padding-bottom: 48px;
+    }
+
 .blog-detail{
     max-width: 636px;
     margin: 0 auto;
@@ -162,7 +193,6 @@ a:hover{
         display: inline-block;
         list-style-type: decimal;
         padding-left: 1em;
-        padding-bottom: 24px;
     }
     .ul-style{
         list-style-type: disc;
@@ -188,7 +218,12 @@ a:hover{
         border-radius: 25px;
     }
 }
+// 部落格內容-手機版排版設計
+@media (max-width: 767px) {
+    .blog-detail{
 
+    }
+    }
 .footer{
   background: #FBFBFB;
   border-top: #6C757D solid 1px;
@@ -212,4 +247,11 @@ a:hover{
   background: #FFFFFF;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+// 手機板-將cotact-me隱藏
+@media (max-width: 767px){
+    .contact-me{
+        display: none;
+    }
 }

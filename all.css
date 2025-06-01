@@ -76,11 +76,22 @@ a:hover {
   border-radius: 10px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .wrap {
   max-width: 1296px;
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .wrap {
+    padding: 0 12px;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -109,7 +120,7 @@ a:hover {
 }
 
 .content {
-  width: 50%;
+  max-width: 50%;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -147,6 +158,22 @@ a:hover {
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  .blog-new {
+    display: block;
+  }
+  .blog-new img {
+    max-width: 100%;
+    padding-bottom: 48px;
+  }
+  .content {
+    max-width: 100%;
+  }
+}
+.text-content {
+  padding-bottom: 48px;
+}
+
 .blog-detail {
   max-width: 636px;
   margin: 0 auto;
@@ -178,7 +205,6 @@ ol {
   display: inline-block;
   list-style-type: decimal;
   padding-left: 1em;
-  padding-bottom: 24px;
 }
 
 .ul-style {
@@ -235,4 +261,10 @@ ol {
   background: #FFFFFF;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  .contact-me {
+    display: none;
+  }
 }/*# sourceMappingURL=all.css.map */
