@@ -55,9 +55,19 @@ body{
     font-weight: 500;
     line-height: 1.5;
 }
+*{
+  box-sizing: border-box;   
+}
 a{
     text-decoration: none;
+    color: #0027D5;
 }
+a:hover{
+    color: lighten(#0027D5,30%);
+    background: #EDEDED;
+    border-radius: 10px;
+}
+
 .wrap{
     max-width: 1296px;
     margin: 0 auto;
@@ -71,6 +81,9 @@ a{
     a {color:black;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    a:hover{
+        color: #0027D5;
     }
 }
 .blog-new{
@@ -88,6 +101,12 @@ a{
     display: flex;
     align-items: center;
     margin-left: 24px;
+    &-pattern{
+        background: #EDEDED;
+        font-weight: 700;
+        padding: 24px;
+        border-radius: 25px;
+    }
 }
 .text-content{
     time{
@@ -121,15 +140,15 @@ a{
     margin: 0 auto;
    .content-part{
        padding-bottom: 48px; }
-       
-    img{
+    .list{
         padding-bottom: 24px;
+    }
+
     }
     h2{
         font-size: 28px;
         font-weight: 700;
         color: #0027D5;
-        padding-bottom: 24px;
     }
     h3{
         font-size: 20px;
@@ -143,5 +162,54 @@ a{
         display: inline-block;
         list-style-type: decimal;
         padding-left: 1em;
+        padding-bottom: 24px;
     }
+    .ul-style{
+        list-style-type: disc;
+        padding-left: 1.2em;
+    }
+    .underline{
+    text-decoration: underline;
+    }
+.page{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    &-btn{
+        color:#4B4B4B;
+        padding: 8px 16px;
+        border: #4B4B4B solid 1px;
+        border-radius: 25px;
+    }
+    &-btn:hover{
+        color:#0027D5;
+        padding: 8px 16px;
+        border: #0027D5 solid 1px;
+        border-radius: 25px;
+    }
+}
+
+.footer{
+  background: #FBFBFB;
+  border-top: #6C757D solid 1px;
+}
+.contact-me{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0px;
+}
+.social-media{
+  display: flex;
+}
+.e-mail{
+  font-size: 32px;
+}
+.copy-right{
+  display: inline-box;
+  text-align: center;
+  background: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
